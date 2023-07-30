@@ -1,3 +1,284 @@
-.index-title {
-  font-size: 100px;
+.hero {
+  background-image: url("../images/home-header.png");
+  background-size: cover;
+  background-position: center;
+
+  @include mobile {
+    background-image: url("../images/home-header-sm.png");
+  }
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 296px 0;
+
+  @include mobile {
+    padding: 144px 0;
+  }
+
+  .hero-title {
+    font-size: 64px;
+    font-weight: bold;
+    color: $title-txt-primary;
+    margin-bottom: 4px;
+
+    @include mobile {
+      font-size: $fz-m;
+      margin-bottom: 8px;
+    }
+  }
+
+  .hero-minor-title {
+    font-size: $fz-l;
+    color: $title-txt-primary;
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  .btn {
+    width: 104px;
+    font-size: $fz-s;
+    background: $color-primary;
+    padding: 6px 12px;
+  }
+}
+
+section {
+  padding: 80px 0;
+
+  @include mobile {
+    padding: 40px 0;
+  }
+}
+
+.service {
+  background: $color-bg;
+}
+
+.service-cards {
+
+  .serivice-item {
+    @include pad {
+      width: 48%;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+
+    .service-pic {
+      width: 100px;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 16px;
+    }
+
+    .card-title {
+      font-size: $fz-m;
+      font-weight: bold;
+      color: $title-txt-primary;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.products {
+  .section-title {
+    @include pad {
+      margin-bottom: 48px;
+    }
+
+    @include mobile {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.producds-cards {
+
+  @include pad {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .producds-item {
+    width: 40%;
+
+    @include pad {
+      width: 50%;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  .products-minor-title {
+    text-align: center;
+    font-size: $fz-xl;
+    font-weight: bold;
+    font-style: italic;
+    color: $color-primary;
+    margin-top: 8px;
+  }
+}
+
+.co-branding {
+  background-image: url(../images/index-bg.png);
+  background-size: cover;
+  background-position: center;
+
+  @include pad {
+    background-image: url(../images/index-bg-md.png);
+  }
+
+  @include mobile {
+    background-image: url(../images/index-bg-sm.png);
+  }
+
+  .section-title {
+    color: #fff;
+
+    @include pad {
+      margin-bottom: 48px;
+    }
+
+    @include mobile {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.branding-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 0;
+
+  @include pad {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .branding-item {
+    width: 100%;
+  }
+
+  .branding-minor-title {
+    font-size: $fz-xl;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    background: #fff;
+    color: $color-primary;
+    padding: 8px 0;
+  }
+}
+
+.recommends {
+
+  .recommends-item {
+    border: 1px solid $color-border;
+    box-shadow: 0 0 6px 0 $color-shadow;
+
+    @include pad {
+      width: 48%;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+
+    .item-content {
+      color: #000;
+      text-align: justify;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 16px;
+
+      .name {
+        margin-bottom: 8px;
+      }
+
+      .date {
+        margin-top: 72px;
+      }
+    }
+  }
+}
+
+.contact {
+  background: $color-bg;
+
+  .container {
+    width: 50%;
+    margin: 0 auto;
+
+    @include pad {
+      width: 75%;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  .desc {
+    font-size: $fz-s;
+    text-align: justify;
+    margin-bottom: 24px;
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      margin-bottom: 8px;
+    }
+
+    input {
+      background: $color-bg;
+      margin-bottom: 16px;
+      padding: 6px 0 6px 12px;
+    }
+
+    .txt-area {
+      padding: 6px 0 106px 12px;
+    }
+
+    .submit-btn {
+      display: block;
+      width: 60%;
+      margin: 0 auto;
+      text-align: center;
+      font-weight: bold;
+      background: $color-primary;
+      color: #fff;
+      border: none;
+      padding: 16px 0;
+      margin-top: 48px;
+
+      &:hover {
+        background: #000;
+        cursor: pointer;
+      }
+
+      @include mobile {
+        width: 100%;
+        margin-top: 24px;
+      }
+    }
+  }
 }

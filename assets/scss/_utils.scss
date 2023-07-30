@@ -1,0 +1,11 @@
+.section-title {
+    font-size: $fz-xl;
+    color: $title-txt-primary;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 24px;
+
+    @include mobile {
+        font-size: $fz-m;
+    }
+}

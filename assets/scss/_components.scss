@@ -1,0 +1,23 @@
+// home page cards
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+
+    @include pad {
+        flex-wrap: wrap;
+    }
+
+    @include mobile {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .cards-item {
+        width: 25%;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
+}
