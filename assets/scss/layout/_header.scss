@@ -1,4 +1,62 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+header {
+  background: $color-primary;
+  padding: 16px 0;
+
+  .container {
+    @include mobile {
+      padding: 0;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 80px;
+
+    @include mobile {
+      align-self: start;
+      padding-left: 15px;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.header-nav-list {
+  width: 492px;
+  display: flex;
+  justify-content: space-between;
+  font-size: $fz-s;
+
+  @include mobile {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.header-nav-list-item {
+  @include mobile {
+    width: 50%;
+    padding: 12px 62px;
+    border: 1px solid #fff;
+  }
+
+  a {
+    &:hover {
+      transform: scale(0.9);
+      transition: transform 0.3s
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
 }
