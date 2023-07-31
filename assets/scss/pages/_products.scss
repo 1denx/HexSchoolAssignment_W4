@@ -1,0 +1,178 @@
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+
+    .menu-item {
+        width: 33.3%;
+        border: 1px solid $color-gray1;
+
+        &:first-child {
+            border-bottom: 8px solid $color-primary;
+        }
+
+        &:active {
+            border-bottom: 8px solid $color-primary;
+        }
+    }
+
+    .menu-title {
+        font-size: 32px;
+        font-weight: 500;
+        color: #000;
+        padding: 16px 0;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+
+        @include pad {
+            font-size: $fz-m;
+        }
+
+        @include mobile {
+            font-size: 16px;
+        }
+    }
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 80px;
+
+    @include mobile {
+        margin-bottom: 40px;
+    }
+}
+
+.series-title {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 500;
+
+    @include mobile {
+        font-size: $fz-m;
+    }
+}
+
+.series-minor-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+
+    @include mobile {
+        font-size: $fz-m;
+    }
+}
+
+.series-products-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px 24px;
+    margin-bottom: 80px;
+
+    @include pad {
+        grid-template-columns: repeat(10, 1fr);
+    }
+
+    .series-item {
+        width: calc((100% - 72px)/4);
+
+        @include pad {
+            width: calc((100% - 24px)/2);
+
+            &:nth-child(n+11) {
+                display: none;
+            }
+        }
+
+        @include mobile {
+            width: 100%;
+            margin-bottom: 64px;
+
+            &:nth-child(n+6) {
+                display: none;
+            }
+        }
+    }
+}
+
+.item-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: $fz-m;
+
+    .item-price {
+        color: $color-primary;
+        font-weight: 500;
+    }
+}
+
+.color-box {
+    display: flex;
+
+    .color1,
+    .color2 {
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+        border-radius: 4px;
+    }
+
+    .color1 {
+        background: $glasses-color1;
+    }
+
+    .color2 {
+        background: $glasses-color2;
+    }
+}
+
+.pages-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+
+    @include mobile {
+        margin-bottom: 64px;
+    }
+
+    .pages-item {
+        &:nth-child(2) {
+            background: #000;
+            color: #fff;
+        }
+    }
+
+    a {
+        color: $color-gray2;
+        font-size: 19px;
+        border: 1px solid $color-gray2;
+
+        &:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        @include pad {
+            font-size: 18px;
+        }
+
+        @include mobile {
+            font-size: 16px;
+        }
+    }
+
+    .page-previous,
+    .page-next {
+        padding: 12px;
+    }
+
+    .page-num {
+        padding: 12px 16px;
+    }
+}

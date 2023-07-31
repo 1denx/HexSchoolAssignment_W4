@@ -34,6 +34,10 @@ footer {
   @include mobile {
     display: none;
   }
+
+  a {
+    color: #fff;
+  }
 }
 
 .sns {
@@ -66,6 +70,7 @@ footer {
   display: flex;
   align-items: center;
   font-size: $fz-l;
+  color: #fff;
 
   @include mobile {
     font-size: 16px;
@@ -115,6 +120,7 @@ footer {
     }
 
     .term-link {
+      color: #fff;
       margin-left: 48px;
 
       @include mobile {

@@ -49,6 +49,8 @@ header {
   }
 
   a {
+    color: #fff;
+
     &:hover {
       transform: scale(0.9);
       transition: transform 0.3s
