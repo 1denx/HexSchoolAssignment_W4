@@ -60,31 +60,29 @@ section {
   background: $color-bg;
 }
 
-.service-cards {
+.serivice-item {
+  @include pad {
+    width: calc((100% - 72px)/4);
+  }
 
-  .serivice-item {
-    @include pad {
-      width: 48%;
-    }
+  @include mobile {
+    width: 100%;
+    justify-content: center;
+  }
 
-    @include mobile {
-      width: 100%;
-    }
+  .service-pic {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
 
-    .service-pic {
-      width: 100px;
-      display: block;
-      margin: 0 auto;
-      margin-bottom: 16px;
-    }
-
-    .card-title {
-      font-size: $fz-m;
-      font-weight: bold;
-      color: $title-txt-primary;
-      text-align: center;
-      margin-bottom: 8px;
-    }
+  .card-title {
+    font-size: $fz-m;
+    font-weight: bold;
+    color: $title-txt-primary;
+    text-align: center;
+    margin-bottom: 8px;
   }
 }
 
@@ -182,36 +180,46 @@ section {
   }
 }
 
-.recommends {
+.recommends-item {
+  display: flex;
+  align-items: stretch;
 
-  .recommends-item {
-    border: 1px solid $color-border;
-    box-shadow: 0 0 6px 0 $color-shadow;
+  @include pad {
+    width: calc((100% - 24px)/2);
+  }
 
-    @include pad {
-      width: 48%;
-    }
+  @include mobile {
+    width: 100%;
+    justify-content: center;
+  }
+}
 
-    @include mobile {
-      width: 100%;
-    }
+.cards-item-link {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  text-align-last: left;
+  border: 1px solid $color-border;
+  box-shadow: 0px 2px 6px $color-shadow;
 
-    .item-content {
-      color: #000;
-      text-align: justify;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 16px;
+  .item-content {
+    flex-grow: 1;
+    height: auto;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+  }
 
-      .name {
-        margin-bottom: 8px;
-      }
+  .name {
+    margin-bottom: 8px;
+  }
 
-      .date {
-        margin-top: 72px;
-      }
-    }
+  .date {
+    font-size: $fz-xs;
+    color: $color-year;
+    margin-top: 72px;
   }
 }
 

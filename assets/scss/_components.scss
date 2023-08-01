@@ -14,10 +14,10 @@
     }
 
     .cards-item {
-        width: 25%;
-    }
+        width: calc((100% - 24px)/2);
 
-    @include mobile {
-        width: 100%;
+        @include mobile {
+            width: 100%;
+        }
     }
 }
