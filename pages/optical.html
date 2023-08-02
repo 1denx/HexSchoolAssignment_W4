@@ -14,9 +14,9 @@
   <%- include('./layout/header'); -%>
     <div class="header-area">
       <nav class="menu">
-        <div class="menu-container">
+        <div class="container">
           <ul class="menu-list">
-            <li class="menu-item">
+            <li class="menu-item  item-active">
               <a class="menu-title" href="./optical.html">OPTICAL</a>
             </li>
             <li class="menu-item">
@@ -43,9 +43,9 @@
       <section class="container">
         <h2 class="series-title">Celluloid Combi</h2>
         <h3 class="series-minor-title">賽璐珞鈦金屬混合鏡框</h3>
-        <ul class="series-products-cards">
-          <li class="series-item">
-            <a href="#"><img src="../assets/images/product-1.png" alt="product-1">
+        <ul class="series-products-cards-sm">
+          <li class="series-item-sm">
+            <a class="series-item-link" href="#"><img src="../assets/images/product-1.png" alt="product-1">
             </a>
             <div class="item-info">
               <p class="item-name">BJ41600S</p>
@@ -56,8 +56,8 @@
               <span class="color2"></span>
             </div>
           </li>
-          <li class="series-item">
-            <a href="#">
+          <li class="series-item-sm">
+            <a class="series-item-link" href="#">
               <img src="../assets/images/product-2.png" alt="product-2">
             </a>
             <div class="item-info">
@@ -69,8 +69,8 @@
               <span class="color2"></span>
             </div>
           </li>
-          <li class="series-item">
-            <a href="#">
+          <li class="series-item-sm">
+            <a class="series-item-link" href="#">
               <img src="../assets/images/product-3.png" alt="product-3">
             </a>
             <div class="item-info">
@@ -82,8 +82,8 @@
               <span class="color2"></span>
             </div>
           </li>
-          <li class="series-item">
-            <a href="#">
+          <li class="series-item-sm">
+            <a class="series-item-link" href="#">
               <img src="../assets/images/product-4.png" alt="product-4">
             </a>
             <div class="item-info">
@@ -95,8 +95,8 @@
               <span class="color2"></span>
             </div>
           </li>
-          <li class="series-item">
-            <a href="#">
+          <li class="series-item-sm">
+            <a class="series-item-link" href="#">
               <img src="../assets/images/product-5.png" alt="product-5">
             </a>
             <div class="item-info">
@@ -108,8 +108,8 @@
               <span class="color2"></span>
             </div>
           </li>
-          <li class="series-item">
-            <a href="#">
+          <li class="series-item-sm">
+            <a class="series-item-link" href="#">
               <img src="../assets/images/product-6.png" alt="product-6">
             </a>
             <div class="item-info">
@@ -121,8 +121,8 @@
               <span class="color2"></span>
             </div>
           </li>
-          <li class="series-item">
-            <a href="#">
+          <li class="series-item-sm">
+            <a class="series-item-link" href="#">
               <img src="../assets/images/product-7.png" alt="product-7">
             </a>
             <div class="item-info">
@@ -134,8 +134,8 @@
               <span class="color2"></span>
             </div>
           </li>
-          <li class="series-item">
-            <a href="#">
+          <li class="series-item-sm">
+            <a class="series-item-link" href="#">
               <img src="../assets/images/product-8.png" alt="product-8">
             </a>
             <div class="item-info">
@@ -147,8 +147,8 @@
               <span class="color2"></span>
             </div>
           </li>
-          <li class="series-item">
-            <a href="#">
+          <li class="series-item-sm">
+            <a class="series-item-link" href="#">
               <img src="../assets/images/product-9.png" alt="product-9">
             </a>
             <div class="item-info">
@@ -160,8 +160,8 @@
               <span class="color2"></span>
             </div>
           </li>
-          <li class="series-item">
-            <a href="#">
+          <li class="series-item-sm">
+            <a class="series-item-link" href="#">
               <img src="../assets/images/product-10.png" alt="product-10">
             </a>
             <div class="item-info">
@@ -173,8 +173,8 @@
               <span class="color2"></span>
             </div>
           </li>
-          <li class="series-item">
-            <a href="#">
+          <li class="series-item-sm">
+            <a class="series-item-link" href="#">
               <img src="../assets/images/product-11.png" alt="product-11">
             </a>
             <div class="item-info">
@@ -186,8 +186,8 @@
               <span class="color2"></span>
             </div>
           </li>
-          <li class="series-item">
-            <a href="#">
+          <li class="series-item-sm">
+            <a class="series-item-link" href="#">
               <img src="../assets/images/product-12.png" alt="product-12">
             </a>
             <div class="item-info">
@@ -200,20 +200,10 @@
             </div>
           </li>
       </section>
-      <nav class="pages">
-        <ul class="pages-list">
-          <li class="pages-item"><a class="page-previous" href="#">上一頁</a></li>
-          <li class="pages-item"><a class="page-num" href="#">1</a></li>
-          <li class="pages-item"><a class="page-num" href="#">2</a></li>
-          <li class="pages-item"><a class="page-num" href="#">3</a></li>
-          <li class="pages-item"><a class="page-num" href="#">4</a></li>
-          <li class="pages-item"><a class="page-num" href="#">5</a></li>
-          <li class="pages-item"><a class="page-next" href="#">下一頁</a></li>
-        </ul>
-      </nav>
     </main>
-    <%- include('./layout/footer'); -%>
-      <script type="module" src="../main.js"></script>
+    <%- include('./layout/page'); -%>
+      <%- include('./layout/footer'); -%>
+        <script type="module" src="../main.js"></script>
 </body>
 
 </html>
