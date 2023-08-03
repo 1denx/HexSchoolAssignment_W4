@@ -4,6 +4,7 @@
 
     .stores-title {
         font-size: $fz-xl;
+        font-weight: bold;
         padding-left: 16px;
         border-left: 8px solid $title-border;
         margin-bottom: 33px;
@@ -25,9 +26,8 @@
     }
 
     select {
-        width: 40%;
         font-size: 18px;
-        padding: 6px 0 6px 12px;
+        padding: 6px 200px 6px 12px;
 
         @include mobile {
             width: calc(100% - 72px);

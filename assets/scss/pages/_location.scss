@@ -1,0 +1,78 @@
+.select .select-area {
+    padding: 6px 130px 6px 12px;
+}
+
+.location {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+
+    @include pad {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.location-card {
+    width: calc(500% / 12);
+    display: flex;
+    flex-direction: column;
+
+    @include pad {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 24px;
+    }
+
+    @include mobile {
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .card-pic {
+        height: 224px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        @include pad {
+            width: calc((100% - 24px)/2);
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+
+    .cards-info {
+        border: 1px solid $color-gray4;
+
+        @include pad {
+            width: calc((100% - 24px)/2);
+        }
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+}
+
+.map {
+    width: calc(700% / 12);
+    background-image: url(../images/map-1.png);
+    background-size: cover;
+    background-position: center;
+
+    @include pad {
+        width: 100%;
+        height: 414px;
+    }
+
+    @include mobile {
+        height: 208px;
+    }
+}
