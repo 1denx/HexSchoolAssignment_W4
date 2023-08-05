@@ -21,7 +21,7 @@
   .hero-title {
     font-size: 64px;
     font-weight: bold;
-    color: $title-txt-primary;
+    color: $color-secondary;
     margin-bottom: 4px;
 
     @include mobile {
@@ -32,7 +32,7 @@
 
   .hero-minor-title {
     font-size: $fz-l;
-    color: $title-txt-primary;
+    color: $color-secondary;
 
     @include mobile {
       font-size: 16px;
@@ -80,7 +80,7 @@ section {
   .card-title {
     font-size: $fz-m;
     font-weight: bold;
-    color: $title-txt-primary;
+    color: $color-secondary;
     text-align: center;
     margin-bottom: 8px;
   }
