@@ -13,17 +13,9 @@ body {
 }
 
 .container {
-    max-width: 1296px;
+    max-width: 1320px;
     margin: 0 auto;
-    padding: 0 15px;
-
-    @include pad {
-        padding: 0 36px;
-    }
-
-    @include mobile {
-        padding: 0 15px;
-    }
+    padding: 0 12px;
 }
 
 .title-txt-color {

@@ -105,6 +105,7 @@
 
         @include pad {
             font-size: 16px;
+            text-transform: lowercase;
         }
 
         @include mobile {

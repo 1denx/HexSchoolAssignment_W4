@@ -63,21 +63,8 @@
     }
 }
 
-.content-list {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-
-    @include pad {
-        gap: 24px;
-    }
-
-    @include mobile {
-        gap: 16px;
-        margin-bottom: 64px;
-    }
-
-    img {
+.content {
+    .content-pic {
         margin-bottom: 8px;
 
         @include pad {
@@ -86,6 +73,25 @@
 
         @include mobile {
             margin-bottom: 8px;
+        }
+    }
+
+    p {
+        color: $color-gray3;
+        margin-bottom: 40px;
+
+        @include pad {
+            margin-bottom: 24px;
+        }
+
+        @include mobile {
+            margin-bottom: 16px;
+        }
+    }
+
+    p:last-child {
+        @include mobile {
+            margin-bottom: 64px;
         }
     }
 }
